@@ -34,6 +34,26 @@ section#telefone{
     height: 627px;
 }
 
+section#redes-sociais{
+    text-align: right; /* passar os icones pro lado direito */
+}
+
+section#redes-sociais img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%; /* deixa os icones redondos */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.363);
+    box-sizing: border-box; /* impede que o efeito faça a imagem subir */
+    transform: translate(-3px, -3px); /* serve pra quando passar o mouse em cima do icone, ele fazer um leve deslocamento pra esquerda e pra cima */
+    transition: transform 0.3s; /* tempo de delay pra imagem fazer o afeito citado acima*/
+
+}
+
 iframe#tela{
     position: relative;
     top: 80px;
@@ -41,3 +61,4 @@ iframe#tela{
     height: 472px;
     width: 267px;
 }
+
