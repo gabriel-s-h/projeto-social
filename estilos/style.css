@@ -1,0 +1,35 @@
+
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}    
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color:black /* interessante por BLACK, pois o site nao carrega a imagem primeiro! */
+}
+
+body{
+    background: url('../imagens/fundo-madeira.jpg')no-repeat top center; /* imagem de fundo, posicionando a imagem de fundo */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    height: 100vh;
+    position: relative;
+}
+
+section#telefone{
+    position: absolute; /* Definit a posicao da div no Main */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Posiciona a section pro meio do Main */
+    background: url('../imagens/frame-iphone.png') no-repeat; /* Adicionar imagen, no repeat > nao repetir a imagem */
+    width: 311px;
+    height: 627px;
+}
